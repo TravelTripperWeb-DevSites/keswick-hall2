@@ -1,0 +1,19 @@
+<form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.newsletter-id }}/" method="post" name="form_{{ site.data.forms.jotform.newsletter-id }}"
+    id="{{ site.data.forms.jotform.newsletter-id }}" accept-charset="utf-8">
+    <input type="hidden" name="formID" value="{{ site.data.forms.jotform.newsletter-id }}">
+    <div class="form-group d-flex justify-content-center">
+      <input type="email" id="input_3" class="form-control" name="q3_email" placeholder="Email Contact" aria-label="Enter Your Email Contact" required>
+      <button type="submit" id="input_2">sign up</button>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" name="q4_iAgree[]" class="" id="exampleCheck1" required aria-label="I agree to the Terms of Use & Privacy Policy">
+      <label class="form-check-label" for="exampleCheck1">I agree to the <a href="/terms/">Terms of Use</a> & <a href="/terms/">Privacy Policy</a></label>
+    </div>
+    <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.newsletter-id }}">
+
+    <script type="text/javascript">
+        document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.newsletter-id }}-{{ site.data.forms.jotform.newsletter-id }}";
+    </script>
+</form>
+
+<script type="text/javascript">JotForm.ownerView=true;</script>

@@ -1,6 +1,6 @@
 ---
 layout: home
-title_localized: 
+title_localized:
   en: Home
 meta_description:
 permalink:
@@ -8,16 +8,35 @@ meta_tags:
   robots:
 ---
 
-{% region test %}
-
-<section class='container'>
-  <div class='row text-center'>
-    <div class='col '>
-      <h1 class="h3">Edit this file</h1>
-      <p>This content is written directly into the index.html home page. You should replace it with editable regions and/or standard components</p>
+<div class="splash-wrap align-items-center">
+  <div class="splash-wrap__inner">
+    <div class="splash-wrap__inner__main">
+      <div class="logo">
+        <img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1572860776/dhxffggib5ohpjpqkboq.svg" alt="Keswick Hall">
+      </div>
+      <h1>Cultivating the<br>Art of American Hospitality</h1>
+      <h2>RECEIVE the latest news about our Reopening in fall 2020 </h2>
+      <div class="form-part">
+        {% include forms/jotform/newsletter.html %}
+      </div>
     </div>
   </div>
-</section>
+</div>
 
-
-{% include components/instagram %}
+<div class="splash-wrap-mobile">
+  <div class="splash-wrap-mobile__header">
+    <div class="logo">
+      <img src="//res.cloudinary.com/traveltripperweb/raw/upload/v1572860776/dhxffggib5ohpjpqkboq.svg" alt="Keswick Hall">
+    </div>
+  </div>
+  <div class="splash-wrap-mobile__image">
+    <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1572860754/wutsxkvebvuyks27igsd.jpg" alt="keswick-hall-splash">
+  </div>
+  <div class="splash-wrap-mobile__content">
+    <h1>Cultivating the Art of American Hospitality</h1>
+    <h2>RECEIVE the latest news about our Reopening in fall 2020 </h2>
+    <div class="form-part">
+      {% include forms/jotform/newsletter.html %}
+    </div>
+  </div>
+</div>
