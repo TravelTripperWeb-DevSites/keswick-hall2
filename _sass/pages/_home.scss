@@ -140,6 +140,10 @@
       background: transparent;
       border: 1px solid $white;
       border-radius: 0;
+
+      &:focus, &:hover {
+        box-shadow: none !important;
+      }
     }
 
     button {
