@@ -1,2 +1,71 @@
 // Shared Page Elements
 // ==========================================================================
+
+.cstm-checkbox {
+  position: relative;
+  display: block;
+  font-family: $family-terciary;
+  font-size: $display4-size;
+  color: $white;
+  letter-spacing: .3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    opacity: 0;
+
+    &:checked {
+      & ~ .checkmark {
+        background-color: $white;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    input {
+      & ~ .checkmark {
+        background-color: $white;
+      }
+    }
+  }
+
+  .checkmark {
+    &:after {
+      top: 1px;
+      left: 5px;
+      width: 5px;
+      height: 9px;
+      border: solid $primary;
+      border-width: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid $white;
+
+  &:after {
+    position: absolute;
+    display: none;
+    content: '';
+  }
+}
