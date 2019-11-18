@@ -31,7 +31,9 @@ It contains all of the page structure that should work for any site and ensures 
     {{ site.data.analytics.custom_body  }}
   {% endif %}
 
+  {% comment %}
   {% include nav-main.html %}
+  {% endcomment %}
 
   <div class='main'>
     {{ content }}

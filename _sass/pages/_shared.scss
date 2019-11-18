@@ -69,3 +69,19 @@
     content: '';
   }
 }
+
+.static-wrap {
+  @include make-container;
+  max-width: 1000px;
+  margin-bottom: 50px;
+  
+  h1 {
+    font-family: $family-secondary;
+    font-size: $display1-size;
+  }
+
+  p, ul, li {
+    font-family: $family-secondary;
+    text-align: left;
+  }
+}
