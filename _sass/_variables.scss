@@ -9,11 +9,13 @@
 //    $gray-800: #343a40 !default;
 //    $gray-900: #212529 !default;
 //
-//    // colors
-//    $primary: #007bff !default;
-//    $secondary: $gray-600;
-//    $black: #16141a;
-//    $white: #fff;
+   // colors
+   $primary: #00758d !default;
+   // $secondary: $gray-600;
+   $success-color: s#008670;
+   $failure-color: #BE0808;
+   $black: #000;
+   $white: #fff;
 //
 //    $green: #28a745 !default;
 //    $cyan: #17a2b8 !default;
@@ -66,10 +68,10 @@
 //    $link-hover-color: $primary;
 //    $link-hover-decoration: underline !default;
 //
-//    // Fonts
-//    $family-primary: "Open Sans", sans-serif;
-//    $family-secondary: "Playfair Display", serif;
-//    $family-terciary: "Roboto", sans-serif;
+   // Fonts
+   $family-primary: 'MisterKOT';
+   $family-secondary: 'cocogoose_pro_bblockinnerline';
+   $family-terciary: 'Avenir-Roman';
 //
 //    $base-font-color: $base-text-color;
 //    $base-body-font: $family-primary;
@@ -88,10 +90,11 @@
 //    $font-weight-bold: 700 !default;
 //    $font-weight-bolder: bolder !default;
 //
-//    $display1-size: 6rem !default;
-//    $display2-size: 5.5rem !default;
-//    $display3-size: 4.5rem !default;
-//    $display4-size: 3.5rem !default;
+   $display1-size: 2.75rem !default; // 44px
+   $display2-size: 2.375rem !default; // 38px
+   $display5-size: 0.875rem !default; // 14px
+   $display3-size: 0.75rem !default; // 12px
+   $display4-size: 0.625rem !default; //10px
 //
 //    $display1-weight: 300 !default;
 //    $display2-weight: 300 !default;
