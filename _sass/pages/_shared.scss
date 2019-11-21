@@ -74,14 +74,19 @@
   @include make-container;
   max-width: 1000px;
   margin-bottom: 50px;
-  
-  h1 {
+
+  .h1 {
     font-family: $family-secondary;
     font-size: $display1-size;
   }
 
+  .h2 {
+    font-family: $family-secondary !important;
+    font-size: $display2-size;
+  }
+
   p, ul, li {
-    font-family: $family-secondary;
+    font-family: $family-terciary;
     text-align: left;
   }
 }
