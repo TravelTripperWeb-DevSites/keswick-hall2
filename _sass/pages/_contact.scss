@@ -1,2 +1,120 @@
 // Contact Page Elements
 // ==========================================================================
+
+.contact-form {
+  @include make-container;
+  max-width: 800px;
+  margin-bottom: 50px;
+
+  .h2 {
+    font-family: $family-secondary !important;
+    font-size: $display2-size;
+  }
+
+  .form-container {
+    @include make-row;
+    margin: 0;
+
+    .form-group {
+      margin-bottom: 10px;
+      @include make-col-ready;
+      padding: 0 5px;
+
+      &.half {
+        @include media-breakpoint-up(md) {
+          @include make-col(6);
+        }
+      }
+    }
+
+    .cstm-checkbox {
+      font-size: 12px;
+      color: $black;
+
+      .text {
+        margin-left: 24px;
+      }
+
+      .checkmark {
+        border: 1px solid $primary;
+      }
+
+      input {
+        &:checked {
+          & ~ .checkmark {
+            background-color: $primary;
+
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        input {
+          & ~ .checkmark {
+            background-color: $primary;
+          }
+        }
+      }
+
+      .checkmark {
+        &:after {
+          top: 1px;
+          left: 5px;
+          width: 5px;
+          height: 9px;
+          border: solid $white;
+          border-width: 0 1px 1px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    .form-control {
+      height: 34px;
+      @include placeholder-text($family-terciary, $display3-size, $primary);
+      padding-left: 8px;
+      font-family: $family-terciary;
+      font-size: $display3-size;
+      color: $primary;
+      letter-spacing: .3px;
+      background: transparent;
+      border: 1px solid $primary;
+      border-radius: 0;
+
+      &:focus, &:hover {
+        box-shadow: none !important;
+      }
+    }
+
+    textarea {
+      &.form-control {
+        height: 100px;
+        resize: none;
+      }
+    }
+  }
+
+  button {
+    width: 90px;
+    height: 38px;
+    font-family: $family-terciary;
+    font-size: $display3-size;
+    color: $white;
+    letter-spacing: .86px;
+    cursor: pointer;
+    background-color: $primary;
+    border: 1px solid $primary;
+    transition: all .3s;
+
+    &:hover {
+      color: $primary;
+      background-color: $white;
+      border: 1px solid $primary;
+    }
+  }
+}
