@@ -4,19 +4,19 @@
     "en": "test2"
   },
   "sub_title_localized": {
-    "en": "test1"
+    "en": "test2"
   },
   "category": [
     "Park"
   ],
   "seo_title_localized": {
-    "en": "test"
+    "en": "test2"
   },
   "seo_description_localized": {
-    "en": "test"
+    "en": "test2"
   },
-  "website_url": "test.com",
+  "website_url": "test2.com",
   "description_localized": {
-    "en": "<p>test</p>"
+    "en": "<p>test2</p>"
   }
 }
