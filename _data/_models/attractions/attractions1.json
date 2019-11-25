@@ -1,0 +1,22 @@
+{
+  "order": 1,
+  "name_localized": {
+    "en": "test1"
+  },
+  "sub_title_localized": {
+    "en": "test1"
+  },
+  "category": [
+    "Park"
+  ],
+  "seo_title_localized": {
+    "en": "test"
+  },
+  "seo_description_localized": {
+    "en": "test"
+  },
+  "website_url": "test.com",
+  "description_localized": {
+    "en": "<p>test</p>"
+  }
+}
