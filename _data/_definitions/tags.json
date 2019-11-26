@@ -4,8 +4,8 @@
     "required": true
   },
   "url_friendly_name": {
-    "type": "url_slug",
-    "label": "URL Friendly Name",
+    "type": "url",
+    "label": "URL Name",
     "required": true
   }
 }
