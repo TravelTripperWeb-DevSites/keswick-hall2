@@ -6,6 +6,7 @@
   "url_friendly_name": {
     "type": "url",
     "label": "URL Name",
-    "required": true
+    "required": true,
+    "multiple": true
   }
 }
