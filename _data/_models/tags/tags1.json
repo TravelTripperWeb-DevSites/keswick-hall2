@@ -1,0 +1,7 @@
+{
+  "url_friendly_name": [
+    "https://abc.def.ghi/?abc=def",
+    "//myurl.net/my%20url"
+  ],
+  "title": "test"
+}
